@@ -9,19 +9,19 @@ dois LEDs ao circuito para explorar a possibilidade de controle remoto de outros
 ### 1. Servidor Web (app.py)
 O servidor web, desenvolvido em Flask, é responsável por gerenciar as requisições e interagir com os dispositivos que enviam dados e ligam/desligam os LEDs. Ele possui várias rotas para realizar diferentes funções:
 
-  - Receber coordenadas (POST /api/coordenadas): Esta rota serve para receber coordenadas de latitude e longitude enviadas pelo microcontrolador; 
-  - Obter últimas coordenadas (GET /api/latest_coordinates): Usada para informar as últimas coordenadas recebidas pelo servidor, permitindo que a interface web as visualize em tempo real;
-  - Controlar LEDs (POST /api/led1, POST /api/led2): Estas rotas permitem que a interface web envie comandos para ligar ou desligar os LEDs conectados ao microcontrolador;
-  - Obter estado dos LEDs (GET /api/led_states): Criada para permitir saber o estado (ligado ou desligado) dos LEDs. Esse estado é exibido no terminal;
+  - **(POST /api/coordenadas)**: Esta rota serve para receber coordenadas de latitude e longitude enviadas pelo microcontrolador; 
+  - **(GET /api/latest_coordinates)**: Usada para informar as últimas coordenadas recebidas pelo servidor, permitindo que a interface web as visualize em tempo real;
+  - **(POST /api/led1, POST /api/led2)**: Estas rotas permitem que a interface web envie comandos para ligar ou desligar os LEDs conectados ao microcontrolador;
+  - **(GET /api/led_states)**: Criada para permitir saber o estado (ligado ou desligado) dos LEDs. Esse estado é exibido no terminal;
   - A última rota é responsável pelo acesso à página web (/).
 
 ### 2. Código do Microcontrolador (main.py)
 O código do arquivo main.py é responsável por conectar o ESP32 à rede e faz a comunicação dele com o servidor.
 
-  - connect_wifi(): O microcontrolador se conecta a uma rede (Wi-Fi ou móvel) utilizando credenciais fornecidas (SSID e senha). Esta conexão é essencial para a comunicação com o servidor Flask.
-  - update_gps_data(): Leitura periódica e acionamento de envio (quando obtém uma posição válida) dos dados do GPS;
-  - send_coordinates(lat, lon): Função responsável pelo envio das coordenadas via requisição HTTP;
-  - update_leds(): Consulta o servidor para obter o estado dos LEDs e os aciona conforme o comando recebido.
+  - **connect_wifi()**: O microcontrolador se conecta a uma rede (Wi-Fi ou móvel) utilizando credenciais fornecidas (SSID e senha). Esta conexão é essencial para a comunicação com o servidor Flask.
+  - **update_gps_data()**: Leitura periódica e acionamento de envio (quando obtém uma posição válida) dos dados do GPS;
+  - **send_coordinates(lat, lon)**: Função responsável pelo envio das coordenadas via requisição HTTP;
+  - **update_leds()**: Consulta o servidor para obter o estado dos LEDs e os aciona conforme o comando recebido.
 
 ### 3. Interface Web (index.html)
 A interface web permite que o usuário visualize as coordenadas geográficas recebidas em tempo real e controle os LEDs. Ela é composta por:
@@ -52,9 +52,8 @@ Utilização:
 4. Executar ngrok.exe e os comandos
   - _ngrok config add-authtoken ESCREVA_AQUI_O_TOKEN_
   - _ngrok http 5000_
-5. O primeiro link na linha Forwarding é o endereço do servidor e pode ser acessado via internet
+5. O primeiro link na linha Forwarding é o endereço do servidor e pode ser usado para acessar a interface via internet
 
 ![ngrok](img/ngrok.png)
 
-.
 
