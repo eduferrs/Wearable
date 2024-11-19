@@ -8,7 +8,7 @@ dois LEDs ao circuito para explorar a possibilidade de controle remoto de outros
 
 
 Materiais:
-	- ESP32
+- ESP32
 - Power Bank
 - 2 leds
 - GPS Neo-6M
