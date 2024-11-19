@@ -30,13 +30,31 @@ A interface web permite que o usuário visualize as coordenadas geográficas rec
   - Atualização em tempo real: A página web realiza uma requisição a cada 3 segundos para atualizar as coordenadas e a posição do marcador no mapa.
 
 ## Execução
-1. Acesse a pasta pelo terminal e execute o comando python app.py
+1. Acesse a pasta pelo terminal e execute o comando _python app.py_
 2. Na linha 14 do main.py substitua NOME_DA_REDE e SENHA pelas informações da rede que será conectada ao ESP32
 3. Se ESP32 e a  máquina com o servidor estiverem conectados à mesma rede, substitua ENDERECO_SERVIDOR nas linhas 45 e 58 do main.py pelo ip informado no terminal
 
 ![IP](img/ip.png)
 
-4.
-5. 
-6.   
+4. Quando o microcontrolador estiver conectado a uma rede móvel, é preciso haver um túnel para a comunicação e o servidor precisa ser deixado online. Nesse caso, a definição do endereço vai depender de isso for feito.
+5. No index.html, linha 64, substitua CHAVE pela key da API do Google Maps
+6. Acesse o endereço do servidor em um navegador.
+
+### API do Maps
+Foi obtida utilizando o período de teste do Google Cloud [(https://cloud.google.com/?hl=pt-BR)](https://cloud.google.com/?hl=pt-BR)
+
+### ngrok
+Foi a solução utilizada para a criação do túnel de comunicação entre ESP e servidor. Além da criação desse túnel, ele fornece uma url na qual a interface da aplicação pode ser acessada.
+Utilização:
+1. Faça o download do programa [https://download.ngrok.com/windows?tab=download](https://download.ngrok.com/windows?tab=download)
+2. Crie uma conta em [https://dashboard.ngrok.com/signup](https://dashboard.ngrok.com/signup)
+3. Gere um token [https://dashboard.ngrok.com/get-started/your-authtoken](https://dashboard.ngrok.com/get-started/your-authtoken)
+4. Executar ngrok.exe e os comandos
+  - _ngrok config add-authtoken ESCREVA_AQUI_O_TOKEN_
+  - _ngrok http 5000_
+5. O primeiro link na linha Forwarding é o endereço do servidor e pode ser acessado via internet
+
+![ngrok](img/ngrok.png)
+
+.
 
