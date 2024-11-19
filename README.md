@@ -9,9 +9,9 @@ dois LEDs ao circuito para explorar a possibilidade de controle remoto de outros
 
 Materiais:
 	- ESP32
-	- Power Bank
-	- 2 leds
-	- GPS Neo-6M
+- Power Bank
+- 2 leds
+- GPS Neo-6M
 	  
 
 ### 1. Servidor Web (app.py)
