@@ -6,6 +6,14 @@ página HTML que interage com o servidor.
 A principal funcionalidade consiste em enviar dados de geolocalização para o servidor, que os utiliza para marcar em um mapa e atualizar em tempo real a posição do microcontrolador. Além disso, foram incluídos 
 dois LEDs ao circuito para explorar a possibilidade de controle remoto de outros dispositivos.
 
+
+Materiais:
+	- ESP32
+  - GPS Neo-6M
+	- Power Bank
+	- 2 leds
+	  
+
 ### 1. Servidor Web (app.py)
 O servidor web, desenvolvido em Flask, é responsável por gerenciar as requisições e interagir com os dispositivos que enviam dados e ligam/desligam os LEDs. Ele possui várias rotas para realizar diferentes funções:
 
