@@ -50,8 +50,10 @@ A interface web permite que o usuário visualize as coordenadas geográficas rec
 7. Faça o main.py executar
 8. Acesse o endereço do servidor em um navegador.
 
+
 ### API do Maps
 Foi obtida utilizando o período de teste do Google Cloud [(https://cloud.google.com/?hl=pt-BR)](https://cloud.google.com/?hl=pt-BR)
+
 
 ### ngrok
 Serviço utilizado para a criação do túnel de comunicação entre ESP e servidor. Para isso, ele endereça o servidor e permite o acesso à interface com uma url.
