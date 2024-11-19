@@ -29,3 +29,14 @@ A interface web permite que o usuário visualize as coordenadas geográficas rec
   - Controle dos LEDs: A interface oferece botões para ligar e desligar os LEDs.
   - Atualização em tempo real: A página web realiza uma requisição a cada 3 segundos para atualizar as coordenadas e a posição do marcador no mapa.
 
+## Execução
+1. Acesse a pasta pelo terminal e execute o comando python app.py
+2. Na linha 14 do main.py substitua NOME_DA_REDE e SENHA pelas informações da rede que será conectada ao ESP32
+3. Se ESP32 e a  máquina com o servidor estiverem conectados à mesma rede, substitua ENDERECO_SERVIDOR nas linhas 45 e 58 do main.py pelo ip informado no terminal
+
+![IP](img/ip.png)
+
+4.
+5. 
+6.   
+
