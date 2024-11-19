@@ -2,6 +2,7 @@
 Este projeto foi desenvolvido para a disciplina Computação Física e Aplicações, em conjunto com uma turma do curso de Textil e Moda. Consiste em uma aplicação que envolve microcontrolador, comunicação via rede e 
 uma interface web para monitoramento e controle de dispositivos. Em termos de software, ele é composto por três partes principais: um servidor web Flask, código para execução no microcontrolador (ESP32) e uma 
 página HTML que interage com o servidor.
+
 A principal funcionalidade consiste em enviar dados de geolocalização para o servidor, que os utiliza para marcar em um mapa e atualizar em tempo real a posição do microcontrolador. Além disso, foram incluídos 
 dois LEDs ao circuito para explorar a possibilidade de controle remoto de outros dispositivos.
 
