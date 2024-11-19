@@ -46,13 +46,15 @@ A interface web permite que o usuário visualize as coordenadas geográficas rec
 
 4. Quando o microcontrolador estiver conectado a uma rede móvel, é preciso haver um túnel para a comunicação e o servidor precisa ser deixado online. Nesse caso, a definição do endereço vai depender de isso for feito.
 5. No index.html, linha 64, substitua CHAVE pela key da API do Google Maps
-6. Acesse o endereço do servidor em um navegador.
+6. Carregue os arquivos micropyGPS e main.py na memória do ESP
+7. Faça o main.py executar
+8. Acesse o endereço do servidor em um navegador.
 
 ### API do Maps
 Foi obtida utilizando o período de teste do Google Cloud [(https://cloud.google.com/?hl=pt-BR)](https://cloud.google.com/?hl=pt-BR)
 
 ### ngrok
-Foi a solução utilizada para a criação do túnel de comunicação entre ESP e servidor. Além da criação desse túnel, ele fornece uma url na qual a interface da aplicação pode ser acessada.
+Serviço utilizado para a criação do túnel de comunicação entre ESP e servidor. Para isso, ele endereça o servidor e permite o acesso à interface com uma url.
 Utilização:
 1. Faça o download do programa [https://download.ngrok.com/windows?tab=download](https://download.ngrok.com/windows?tab=download)
 2. Crie uma conta em [https://dashboard.ngrok.com/signup](https://dashboard.ngrok.com/signup)
