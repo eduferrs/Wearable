@@ -59,9 +59,9 @@ Utilização:
 3. Gere um token [https://dashboard.ngrok.com/get-started/your-authtoken](https://dashboard.ngrok.com/get-started/your-authtoken)
 4. Executar ngrok.exe e os comandos
 
-         _ngrok config add-authtoken ESCREVA_AQUI_O_TOKEN_
+         ngrok config add-authtoken ESCREVA_AQUI_O_TOKEN
+         ngrok http 5000
    
-         _ngrok http 5000_
 6. O primeiro link na linha Forwarding é o endereço do servidor e pode ser usado para acessar a interface via internet
 
 ![ngrok](img/ngrok.png)
