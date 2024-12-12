@@ -1,10 +1,15 @@
 ## Introdução
 Este projeto foi desenvolvido para a disciplina Computação Física e Aplicações, em conjunto com uma turma do curso de Textil e Moda. Consiste em uma aplicação que envolve microcontrolador, comunicação via rede e 
-uma interface web para monitoramento e controle de dispositivos. Em termos de software, ele é composto por três partes principais: um servidor web Flask, código para execução no microcontrolador (ESP32) e uma 
-página HTML que interage com o servidor.
+uma interface web para monitoramento e controle de dispositivos. 
+
+Desenvolvido pensando em crianças na faixa etária de 6 a 10  anos de idade, e em seus pais, preocupados com a segurança dos pequenos ao fazer trajetos curtos como ir ao mercado, à padaria ou à escola; com nosso produto as crianças podem aprender a cada passo a ter mais independência.
+
+A peça combina a modelagem de um colete com ajustes de uma mochila, criada em tecido de sarja com forro para garantia de uma estrutura firme para segurar os componentes e isolá-los do corpo da criança. Ou seja, possui o conforto e a estética de um acessório com praticidade para limpar, além de promover uma distribuição uniforme dos componentes na peça.
+
+Em termos de software, ele é composto por três partes principais: um servidor web Flask, código para execução no microcontrolador (ESP32) e uma página HTML que interage com o servidor.
 
 A principal funcionalidade consiste em enviar dados de geolocalização para o servidor, que os utiliza para marcar em um mapa e atualizar em tempo real a posição do microcontrolador. Além disso, foram incluídos 
-dois LEDs ao circuito para explorar a possibilidade de controle remoto de outros dispositivos.
+dois LEDs à peça na altura dos ombros. Esses LEDs podem ser acionados pelo adulto que acompanha o trajeto para indicar direções que a criança deve seguir.
 
 
 Materiais:
