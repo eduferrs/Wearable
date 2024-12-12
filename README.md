@@ -31,7 +31,7 @@ O servidor web, desenvolvido em Flask, é responsável por gerenciar as requisi�
 ### 2. Código do Microcontrolador (main.py)
 O código do arquivo main.py é responsável por conectar o ESP32 à rede e faz a comunicação dele com o servidor.
 
-  - **connect_wifi()**: O microcontrolador se conecta a uma rede (Wi-Fi ou móvel) utilizando credenciais fornecidas (SSID e senha). Esta conexão é essencial para a comunicação com o servidor Flask.
+  - **connect_wifi()**: O microcontrolador se conecta a uma rede (Wi-Fi ou móvel) utilizando credenciais fornecidas (SSID e senha).
   - **update_gps_data()**: Leitura periódica e acionamento de envio (quando obtém uma posição válida) dos dados do GPS;
   - **send_coordinates(lat, lon)**: Função responsável pelo envio das coordenadas via requisição HTTP;
   - **update_leds()**: Consulta o servidor para obter o estado dos LEDs e os aciona conforme o comando recebido.
@@ -44,15 +44,15 @@ A interface web permite que o usuário visualize as coordenadas geográficas rec
 
 ## Execução
 1. Acesse a pasta pelo terminal e execute o comando _python app.py_
-2. Na linha 14 do main.py substitua NOME_DA_REDE e SENHA pelas informações da rede que será conectada ao ESP32
-3. Se ESP32 e a  máquina com o servidor estiverem conectados à mesma rede, substitua ENDERECO_SERVIDOR nas linhas 45 e 58 do main.py pelo ip informado no terminal
+2. Na linha 14 do _main.py_ substitua NOME_DA_REDE e SENHA pelas informações da rede que será conectada ao ESP32
+3. Se ESP32 e a  máquina com o servidor estiverem conectados à mesma rede, substitua ENDERECO_SERVIDOR nas linhas 45 e 58 do main.py pelo ip informado no terminal (isso foi feito para os testes iniciais). 
 
 ![IP](img/ip.png)
 
-4. Quando o microcontrolador estiver conectado a uma rede móvel, é preciso haver um túnel para a comunicação e o servidor precisa ser deixado online. Nesse caso, a definição do endereço vai depender de isso for feito.
-5. No index.html, linha 64, substitua CHAVE pela key da API do Google Maps
-6. Carregue os arquivos micropyGPS e main.py na memória do ESP
-7. Faça o main.py executar
+4. Quando o microcontrolador estiver conectado a uma rede móvel, é preciso haver um túnel para a comunicação e o servidor precisa ser deixado online. Nesse caso, a definição do endereço vai depender de como isso for feito.
+5. No index.html, linha 64, substitua _CHAVE_ pela key da API do Google Maps
+6. Carregue os arquivos _micropyGPS.py_ e _main.py_ na memória do ESP
+7. Faça o _main.py_ executar
 8. Acesse o endereço do servidor em um navegador.
 
 
